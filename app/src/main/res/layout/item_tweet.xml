@@ -31,4 +31,13 @@
         android:autoLink="all"
         android:linksClickable="true"
         tools:text="You won't believe the great time I did NOT have today. I mean, what was up with that anyways world?" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/tvScreenName"
+        android:textStyle="italic"
+        tools:text="Time goes here" />
 </RelativeLayout>
