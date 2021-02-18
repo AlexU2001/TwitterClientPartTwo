@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
+    android:layout_margin="0dp"
+    android:background="#000000"
+    android:backgroundTint="#000000"
     tools:context=".ComposeActivity">
 
     <EditText
         android:id="@+id/etCompose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minLines="5"
+        android:textColor="#FFFFFF"
         tools:text="What's up?" />
 
     <Button
@@ -25,5 +29,24 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/tweet" />
+        android:backgroundTint="#2196F3"
+        android:text="@string/tweet"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/btnTweet"
+        android:text="280"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        tools:text="280" />
+
 </RelativeLayout>
