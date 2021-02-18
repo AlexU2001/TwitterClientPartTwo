@@ -25,8 +25,8 @@ public class Tweet {
     }
 
     public String getFormattedTimestamp(){
-        TimeFormatter.getTimeDifference(createdAt);
-        return createdAt;
+        String timeDifference = TimeFormatter.getTimeDifference(createdAt);
+        return timeDifference;
     }
 
     public static List<Tweet> fromJsonArray(JSONArray jsonArray) throws JSONException {
